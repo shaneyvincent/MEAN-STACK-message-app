@@ -1,4 +1,4 @@
-export class Auth Controller {
+export class AuthController {
 
 
     }
