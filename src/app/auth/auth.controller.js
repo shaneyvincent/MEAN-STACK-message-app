@@ -1,4 +1,4 @@
-export class MainController {
+export class Auth Controller {
   constructor ($http) {
     'ngInject';
 
