@@ -34,7 +34,7 @@ function GetMessages()
 
 mongoose.connect("mongodb://localhost:27017/test", function(err,db){
   if(!err){
-    console.log("we are conected to mongo");
+    console.log("Shaneys conected to mongo");
     GetMessages();
   }
 })
