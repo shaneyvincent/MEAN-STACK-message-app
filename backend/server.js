@@ -3,10 +3,7 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-
-var Message = mongoose.model('Message',{
-    msg: String
-});
+var Message = require('./models/message'); 
 
 app.use(bodyParser.json());
 
