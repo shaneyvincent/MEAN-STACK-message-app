@@ -3,7 +3,8 @@ var app = express();
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
-var Message = require('./models/message'); 
+var Message = require('./models/message');
+var User = require('./models/user');
 
 app.use(bodyParser.json());
 
@@ -28,6 +29,18 @@ app.post('/api/message', function(req,res){
 
 app.post('/auth/register', function(req,res){
       console.log(req.body);
+
+      var user = new User(req.body);
+
+      user.save(function(err,result){
+        if(err)
+            {
+              res.status(500).send({
+                message: err.message
+              });
+            }
+            res.status(200);
+      })
 })
 
 function GetMessages(req, res)
