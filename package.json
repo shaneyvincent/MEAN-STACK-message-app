@@ -9,7 +9,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "node index.html"
+    "start": "node index.js"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
