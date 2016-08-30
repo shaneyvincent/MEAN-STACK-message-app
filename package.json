@@ -62,5 +62,12 @@
   },
   "engines": {
     "node": ">=0.10.0"
-  }
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
 }
