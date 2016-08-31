@@ -1,5 +1,6 @@
 {
   "name": "mymessagefront",
+  "main": "server.js",
   "version": "0.0.0",
   "dependencies": {
     "express": "^4.14.0",
@@ -9,7 +10,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
