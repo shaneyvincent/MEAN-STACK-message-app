@@ -3,13 +3,13 @@ export function routerConfig($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'app/main/main.html',
+      templateUrl: 'src/app/main/main.html',
       controller: 'MainController',
       controllerAs: 'main'
     })
     .state('auth', {
       url: '/auth',
-      templateUrl: 'app/auth/auth.html',
+      templateUrl: 'src/app/auth/auth.html',
       controller: 'AuthController',
       controllerAs: 'auth'
     });
