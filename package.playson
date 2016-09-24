@@ -3,7 +3,6 @@
   "main": "server.js",
   "version": "0.0.0",
   "dependencies": {
-    "bower": "^1.7.9",
     "express": "^4.14.0",
     "ejs": "^1.0.0",
     "gzippo": "^0.2.0",
@@ -11,7 +10,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "./node_modules/bower/bin/bower install && gulp"
+    "start": "node server.js"
   },
   "devDependencies": {
     "estraverse": "~4.1.0",
