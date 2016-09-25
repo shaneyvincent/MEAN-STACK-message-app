@@ -13,6 +13,7 @@ app.set('view engine', 'ejs');
 //app.get('/', function(request, response) {
 //  response.render('pages/index');
 //});
+
 app.use(gzippo.staticGzip("" + __dirname + "/dist"));
 
 app.listen(app.get('port'), function() {
